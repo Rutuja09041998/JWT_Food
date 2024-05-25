@@ -1,0 +1,22 @@
+server:
+  port: 8083
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: JwtService
+  datasource:
+    url: jdbc:mysql://localhost:3306/JWTSecurity
+    username: root
+    password: Rutuja@1998
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka 
